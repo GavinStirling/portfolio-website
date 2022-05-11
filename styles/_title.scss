@@ -1,0 +1,11 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .section-title {
+        @include centerSelf();
+        height: 5vh;
+        margin: auto;
+        font-family: $primary-font;
+    }
+}

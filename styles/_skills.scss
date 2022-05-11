@@ -1,0 +1,30 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .skills {
+        height: 95vh;
+        margin: 4em $section-margin;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        gap: 1em;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        font-family: $primary-font;
+        color: $secondary-font-color;
+        font-weight: 500;
+
+        &__card {
+            @include centerCard();
+
+            img {
+                height: $skill-image-size;
+                width: $skill-image-size;
+            }
+
+            p {
+                margin-top: 2em;
+            }
+        }
+    }
+}

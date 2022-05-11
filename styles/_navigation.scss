@@ -1,0 +1,37 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        width: 90%;
+        height: 5vh;
+        margin: 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        &__logo {
+            height: 2.5em;
+            width: 2.5em;
+            margin: 1em;
+        }
+
+        &__title {
+            font-family: $primary-font;
+            font-size: 1.5em;
+        }
+
+        &__menu {
+            margin: 1em;
+            width: 1em;
+            height: 1em;
+        }
+    }
+}

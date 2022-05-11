@@ -7,11 +7,11 @@
 
 @media screen and (max-width: 480px) {
   .navigation {
-    width: 100%;
+    width: 90%;
     height: 5vh;
-    margin: 1em;
+    margin: 2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .navigation__left {
@@ -33,10 +33,11 @@
     width: 1em;
     height: 1em;
   }
-
+}
+@media screen and (max-width: 480px) {
   .intro {
     margin: 2em;
-    height: 120vh;
+    height: 95vh;
     padding: 2em;
     font-family: "Inter";
     display: flex;
@@ -55,7 +56,7 @@
   }
   .intro__button {
     width: 100%;
-    height: 100px;
+    height: 4em;
     margin-bottom: 2em;
     font-family: "Inter";
     font-weight: 700;
@@ -63,20 +64,24 @@
     background-color: #BAE8E8;
     border: 2px solid #272643;
     border-radius: 0.25em;
-    box-shadow: 0em 8em 4em rgba(185, 192, 192, 0.19);
+    box-shadow: 0.25em 0.25em #272643;
   }
-
+}
+@media screen and (max-width: 480px) {
   .section-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 5vh;
     margin: auto;
     font-family: "Inter";
   }
-
+}
+@media screen and (max-width: 480px) {
   .skills {
-    height: 100vh;
-    margin: 2.5em;
+    height: 95vh;
+    margin: 4em 2em;
+    text-align: center;
     display: grid;
     justify-content: center;
     gap: 1em;
@@ -97,13 +102,21 @@
   .skills__card p {
     margin-top: 2em;
   }
-
+}
+@media screen and (max-width: 480px) {
   .projects {
-    height: 100vh;
-    margin: 2.5em;
+    margin: 2em;
     font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects__card {
+    height: 100%;
+    margin: 1.5em 0em;
   }
   .projects__card--image {
+    width: 100%;
     margin-bottom: 1em;
   }
   .projects__card--tech {
@@ -140,24 +153,35 @@
   .projects__card--buttons button img {
     margin-left: 1em;
   }
-
+}
+@media screen and (max-width: 480px) {
   .about {
-    margin: 1em;
+    margin: 1em 1em;
   }
 
   .footer {
     width: 100%;
-    height: 5vh;
+    height: 15vh;
     background-color: #272643;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
+    justify-content: space-evenly;
   }
   .footer__links {
-    background-color: #BAE8E8;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .footer a {
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+    background-color: white;
+    color: #272643;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer__email {
     color: white;
