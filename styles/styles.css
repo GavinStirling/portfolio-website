@@ -66,11 +66,11 @@
     box-shadow: 0em 8em 4em rgba(185, 192, 192, 0.19);
   }
 
-  #skills-title {
+  .section-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2em;
+    margin: auto;
     font-family: "Inter";
   }
 
@@ -90,7 +90,76 @@
     flex-direction: column;
     align-items: center;
   }
+  .skills__card img {
+    height: 5em;
+    width: 5em;
+  }
   .skills__card p {
     margin-top: 2em;
+  }
+
+  .projects {
+    height: 100vh;
+    margin: 2.5em;
+    font-family: "Inter";
+  }
+  .projects__card--image {
+    margin-bottom: 1em;
+  }
+  .projects__card--tech {
+    margin-bottom: 0.5em;
+    color: #BAE8E8;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.95em;
+  }
+  .projects__card--title {
+    font-size: 2em;
+  }
+  .projects__card--description {
+    margin: 2em 0em;
+    color: #8C9CB1;
+  }
+  .projects__card--buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.5em;
+  }
+  .projects__card--buttons button {
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .projects__card--buttons button img {
+    margin-left: 1em;
+  }
+
+  .about {
+    margin: 1em;
+  }
+
+  .footer {
+    width: 100%;
+    height: 5vh;
+    background-color: #272643;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  .footer__links {
+    background-color: #BAE8E8;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer__email {
+    color: white;
   }
 }/*# sourceMappingURL=styles.css.map */

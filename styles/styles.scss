@@ -1,5 +1,6 @@
 @use "./variables" as *;
 @use "./reset";
+@use "./mixins" as *;
 
 @media screen and (max-width: 480px) {
     .navigation {
@@ -72,11 +73,9 @@
         }
     }
 
-    #skills-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2em;
+    .section-title {
+        @include centerSelf();
+        margin: auto;
         font-family: $primary-font;
     }
 
@@ -90,21 +89,92 @@
         font-family: $primary-font;
         color: $secondary-font-color;
         font-weight: 500;
-                
-        &__card{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
 
+        &__card {
+            @include centerCard();
 
+            img {
+                height: $skill-image-size;
+                width: $skill-image-size;
+            }
 
             p {
                 margin-top: 2em;
             }
         }
+    }
 
+    .projects {
+        height: 100vh;
+        margin: 2.5em;
+        font-family: $primary-font;
+
+        &__card--image {
+            margin-bottom: 1em;
+        }
         
+        &__card--tech {
+            margin-bottom: 0.5em;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
 
+        &__card--title {
+            font-size: 2em;
+            
+        }
+
+        &__card--description {
+            margin: 2em 0em;
+            color: $secondary-font-color;
+        }
+
+        &__card--buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2.5em;
+
+            button {
+                width: 8em;
+                @include centerSelf();
+                margin-right: 1em;
+                background-color: $primary-background;
+                border: none;
+                display: flex;
+                justify-content: flex-start;
+
+                img {
+                    margin-left: 1em;
+                }
+            }
+        }
+
+    }
+
+    .about {
+        margin: 1em;
+    }
+
+    .footer {
+        width: 100%;
+        height: 5vh;
+        background-color: $secondary-color;
+
+        @include centerCard();
+        align-items: center;
+
+        &__links {
+            background-color: $primary-color;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        &__email {
+            color: $primary-background;
+        }
 
     }
 
