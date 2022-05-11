@@ -9,8 +9,9 @@
   .navigation {
     width: 100%;
     height: 5vh;
+    margin: 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .navigation__left {
@@ -19,10 +20,13 @@
     align-items: center;
   }
   .navigation__logo {
+    height: 2.5em;
+    width: 2.5em;
     margin: 1em;
   }
   .navigation__title {
     font-family: "Inter";
+    font-size: 1.5em;
   }
   .navigation__menu {
     margin: 1em;
@@ -56,21 +60,37 @@
     font-family: "Inter";
     font-weight: 700;
     font-size: 1.25em;
-    background-color: aqua;
+    background-color: #BAE8E8;
     border: 2px solid #272643;
     border-radius: 0.25em;
     box-shadow: 0em 8em 4em rgba(185, 192, 192, 0.19);
   }
 
+  #skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    font-family: "Inter";
+  }
+
   .skills {
-    height: 150vh;
+    height: 100vh;
+    margin: 2.5em;
     display: grid;
     justify-content: center;
-    gap: 4em;
-    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
-    grid-template: "title title title" "git html5 css3" "javascript scss bem" "react java springboot";
+    gap: 1em;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    font-family: "Inter";
+    color: #8C9CB1;
+    font-weight: 500;
   }
-  .skills__title {
-    grid-area: title;
+  .skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills__card p {
+    margin-top: 2em;
   }
 }/*# sourceMappingURL=styles.css.map */
