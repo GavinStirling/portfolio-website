@@ -1,0 +1,30 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .about {
+        margin: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: $primary-font;
+
+        &__title {
+        @include centerSelf();
+        height: 5vh;
+        font-size: 3em;
+        margin: 1em auto;
+        }
+
+        &__image {
+            width:98%;
+            height: auto;
+            margin: 1.5em 0;
+        }
+
+        &__story {
+            margin: 1em;
+        }
+
+    }
+}

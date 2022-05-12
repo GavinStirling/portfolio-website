@@ -1,0 +1,40 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .footer {
+        width: 100%;
+        height: 25vh;
+        background-color: $secondary-color;
+        font-family: $primary-font;
+
+        @include centerCard();
+        justify-content: space-evenly;
+
+        &__links {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            font-size: 1.5em;
+            font-weight: 700;
+            width: 1em;
+            height: 1em;
+            padding: 1em;
+            margin: 0 1em;
+            background-color: $primary-color;
+            color: $secondary-color;
+            @include centerSelf();
+            border-radius: 100%;
+            text-decoration: none;
+        }
+
+        &__email {
+            font-size: 1.125em;
+            color: $primary-background;
+        }
+
+    }
+}

@@ -128,6 +128,7 @@
   }
   .projects__card--title {
     font-size: 2em;
+    font-weight: 600;
   }
   .projects__card--description {
     margin: 2em 0em;
@@ -157,12 +158,34 @@
 @media screen and (max-width: 480px) {
   .about {
     margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter";
   }
-
+  .about__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    font-size: 3em;
+    margin: 1em auto;
+  }
+  .about__image {
+    width: 98%;
+    height: auto;
+    margin: 1.5em 0;
+  }
+  .about__story {
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
   .footer {
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     background-color: #272643;
+    font-family: "Inter";
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,16 +197,22 @@
     justify-content: center;
   }
   .footer a {
-    height: 2em;
-    width: 2em;
-    margin: 1em;
-    background-color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    margin: 0 1em;
+    background-color: #BAE8E8;
     color: #272643;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 100%;
+    text-decoration: none;
   }
   .footer__email {
+    font-size: 1.125em;
     color: white;
   }
 }/*# sourceMappingURL=styles.css.map */
