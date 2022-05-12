@@ -28,3 +28,31 @@
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .skills {
+        height: 95vh;
+        margin: 4em $section-margin;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        gap: 4em;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        font-family: $primary-font;
+        color: $secondary-font-color;
+        font-weight: 500;
+
+        &__card {
+            @include centerCard();
+
+            img {
+                height: $skill-image-size;
+                width: $skill-image-size;
+            }
+
+            p {
+                margin-top: 2em;
+            }
+        }
+    }
+}

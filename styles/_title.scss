@@ -9,3 +9,13 @@
         font-family: $primary-font;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .section-title {
+        @include centerSelf();
+        
+        height: 5vh;
+        margin: 1em auto;
+        font-family: $primary-font;
+    }   
+}
