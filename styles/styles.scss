@@ -6,3 +6,13 @@
 @use "./projects";
 @use "./about";
 @use "./footer";
+
+@use "./variables" as *;
+@use "./mixins" as *;
+
+@media screen and (max-width: 480px) {
+    .navigation {
+        display: flex;
+        
+    }
+}

@@ -45,7 +45,10 @@
             align-items: center;
             margin-bottom: 2.5em;
 
+
             button {
+                font-family: $primary-font;
+                font-weight: 600;
                 width: 8em;
                 @include centerSelf();
                 margin-right: 1em;

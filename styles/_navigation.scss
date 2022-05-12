@@ -9,6 +9,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: $primary-font;
 
         &__left {
             display: flex;
@@ -23,9 +24,12 @@
             margin: 1em;
         }
 
-        &__title {
-            font-family: $primary-font;
+        &__title--mobile {
+            
             font-size: 1.5em;
+        }
+        &__title--tablet {
+            display: none;
         }
 
         &__menu {

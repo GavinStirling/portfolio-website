@@ -11,14 +11,16 @@
         flex-direction: column;
         justify-content: center;
 
-
-
         &__subtitle {
             font-weight: 500;
             color: $secondary-font-color;
             margin-bottom: 2em;
         }
 
+        &__emoji {
+            display: none;
+        }
+        
         &__title {
             font-weight: 600;
             font-size: 4em;
