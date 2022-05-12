@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) {
   .navigation {
     width: 90%;
@@ -26,15 +32,77 @@
     margin: 1em;
   }
   .navigation__title--mobile {
+    font-weight: 700;
     font-size: 1.5em;
   }
-  .navigation__title--tablet {
+  .navigation__title--tablet1 {
+    display: none;
+  }
+  .navigation__title--tablet2 {
     display: none;
   }
   .navigation__menu {
     margin: 1em;
     width: 1em;
     height: 1em;
+  }
+  .navigation__links, .navigation__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 0 3em;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+  }
+  .navigation__logo {
+    display: none;
+  }
+  .navigation__title--mobile {
+    display: none;
+  }
+  .navigation__title--tablet1 {
+    font-weight: 400;
+    font-size: 1.5em;
+  }
+  .navigation__title--tablet2 {
+    font-weight: 700;
+  }
+  .navigation__menu {
+    display: none;
+  }
+  .navigation__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navigation__links {
+    font-family: "Inter";
+    font-weight: 400;
+    color: #8C9CB1;
+  }
+  .navigation__links a {
+    margin: 0 1em;
+    text-decoration: none;
+  }
+  .navigation__links a:visited {
+    color: #8C9CB1;
+  }
+  .navigation__contact {
+    margin: 0 1em;
+    height: 2.5em;
+    width: 8em;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #272643;
+    background-color: #BAE8E8;
+    border: solid 1px #272643;
+    border-radius: 0.25em;
   }
 }
 @media screen and (max-width: 480px) {
@@ -224,8 +292,30 @@
     color: white;
   }
 }
-@media screen and (max-width: 480px) {
-  .navigation {
+@media screen and (min-width: 768px) {
+  .intro {
+    width: 90%;
+    height: 90vh;
+    margin: 2em;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+  }
+  .intro__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin: 1em 0;
+    color: #8C9CB1;
+  }
+  .intro__emoji {
+    height: 1em;
+    width: 1em;
+  }
+  .intro__title {
+    width: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */

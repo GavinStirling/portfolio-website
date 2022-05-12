@@ -1,11 +1,12 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+
 @media screen and (max-width: 480px) {
     .navigation {
         width: 90%;
         height: 5vh;
-        margin: 2em;
+        margin: $margin-tablet;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -25,10 +26,13 @@
         }
 
         &__title--mobile {
-            
+            font-weight: 700;
             font-size: 1.5em;
         }
-        &__title--tablet {
+        &__title--tablet1 {
+            display: none;
+        }
+        &__title--tablet2 {
             display: none;
         }
 
@@ -36,6 +40,76 @@
             margin: 1em;
             width: 1em;
             height: 1em;
+        }
+
+        &__links, &__contact {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        padding: 0 3em;   
+        justify-content: space-between;
+        align-items: center;
+        font-family: $primary-font;
+
+        &__logo {
+            display: none;
+        }
+
+        &__title--mobile {
+            display: none;
+        }
+
+        &__title--tablet1 {
+            font-weight: 400;
+            font-size: 1.5em;
+        }
+
+        &__title--tablet2 {
+            font-weight: 700;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &__links {
+            font-family: $primary-font;
+            font-weight: 400;
+            color: $secondary-font-color;    
+
+            a {
+                margin: 0 1em;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: $secondary-font-color;
+            }
+        }
+
+        &__contact {
+            margin: 0 1em;
+            height: 2.5em;
+            width: 8em;
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border: solid 1px $secondary-color;
+            border-radius: 0.25em;
         }
     }
 }

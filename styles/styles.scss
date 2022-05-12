@@ -10,9 +10,32 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-@media screen and (max-width: 480px) {
-    .navigation {
+@media screen and (min-width: 768px) {
+    .intro {
+        width: 90%;
+        height: 90vh;
+        margin: $margin-tablet;
         display: flex;
-        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: $primary-font;
+
+        &__subtitle {
+            @include centerSelf();
+            height: 5vh;
+            margin: 1em 0;
+            color: $secondary-font-color;
+        }
+
+        &__emoji {
+            height: 1em;
+            width: 1em;
+        }
+
+        &__title {
+            width: 60%;
+            
+        }
     }
 }
