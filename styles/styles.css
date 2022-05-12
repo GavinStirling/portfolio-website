@@ -308,7 +308,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    margin: 1em 0;
+    margin: 0.5em 0;
     color: #8C9CB1;
   }
   .intro__emoji {
@@ -316,6 +316,21 @@ body {
     width: 1em;
   }
   .intro__title {
-    width: 60%;
+    text-align: center;
+    font-size: 2.25em;
+    margin: 0.5em 0;
+    width: 80%;
+    font-weight: 600;
+  }
+  .intro__button {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em;
+    margin: 1em;
+    background-color: #BAE8E8;
+    border: 2px solid #272643;
+    border-radius: 0.25em;
+    box-shadow: 0.1em 0.1em #272643;
   }
 }/*# sourceMappingURL=styles.css.map */
