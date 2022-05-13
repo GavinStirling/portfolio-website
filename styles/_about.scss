@@ -4,6 +4,7 @@
 @media screen and (max-width: 480px) {
     .about {
         margin: 1em 1em;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,9 +22,13 @@
         }
 
         &__image {
-            width: 98%;
+            width: 90%;
             height: auto;
             margin: 1.5em 0;
+        }
+
+        &__flag {
+            display: none;
         }
 
         &__story {
@@ -56,6 +61,10 @@
             width: 80%;
             height: auto;
             margin: 1.5em 0;
+        }
+
+        &__flag {
+            display: none;
         }
 
         &__left {
@@ -94,8 +103,7 @@
         }
 
         &__title--desktop {
-            text-align: left;           
-            
+            text-align: left;
             width: 70%;
             font-size: 2em;
             margin: 1em 0em;

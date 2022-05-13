@@ -337,7 +337,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .skills {
-    height: 95vh;
     margin: 4em 2em;
     text-align: center;
     font-family: "Inter";
@@ -368,7 +367,6 @@ body {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .skills {
-    height: 95vh;
     margin: 4em 2em;
     text-align: center;
     font-family: "Inter";
@@ -601,6 +599,7 @@ body {
 @media screen and (max-width: 480px) {
   .about {
     margin: 1em 1em;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -618,9 +617,12 @@ body {
     display: none;
   }
   .about__image {
-    width: 98%;
+    width: 90%;
     height: auto;
     margin: 1.5em 0;
+  }
+  .about__flag {
+    display: none;
   }
   .about__story {
     margin: 1em;
@@ -649,6 +651,9 @@ body {
     width: 80%;
     height: auto;
     margin: 1.5em 0;
+  }
+  .about__flag {
+    display: none;
   }
   .about__left {
     display: flex;
@@ -731,6 +736,9 @@ body {
     border-radius: 100%;
     text-decoration: none;
   }
+  .footer__rights {
+    display: none;
+  }
   .footer__email {
     font-size: 1.125em;
     color: white;
@@ -766,6 +774,9 @@ body {
     align-items: center;
     border-radius: 100%;
     text-decoration: none;
+  }
+  .footer__rights {
+    display: none;
   }
   .footer__email {
     font-size: 1.125em;
