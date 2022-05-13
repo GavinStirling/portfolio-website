@@ -10,6 +10,42 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 769px) {
     
 }
+
+// .about {
+//     margin: 1em 1em;
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-family: $primary-font;
+
+//     &__left {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: left;
+//     }
+
+//     &__title {
+//     height: 5vh;
+//     font-size: 3em;
+//     margin: 1em auto;
+//     }
+
+//     &__title--mobile {
+//         display: none;
+//     }
+
+//     &__image {
+//         width:98%;
+//         height: auto;
+//         margin: 1.5em 0;
+//     }
+
+//     &__story {
+//         margin: 1em;
+//     }
+
+// }

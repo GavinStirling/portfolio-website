@@ -11,6 +11,70 @@
 
         &__card {
             height: 100%;
+            margin: 1.5em 0em;            
+        }
+
+        &__card--image {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+        
+        &__card--tech {
+            margin-bottom: 0.5em;
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        &__card--title {
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        &__card--description {
+            margin: 2em 0em;
+            color: $secondary-font-color;
+        }
+
+        &__card--buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 2.5em;
+
+            button {
+                font-family: $primary-font;
+                font-weight: 600;
+                width: 8em;
+                @include centerSelf();
+                margin-right: 1em;
+                background-color: $primary-background;
+                border: none;
+                display: flex;
+                justify-content: flex-start;
+
+                img {
+                    margin-left: 1em;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .projects {
+        width: 90%;
+        margin: $section-margin;     
+        font-family: $primary-font;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__card {
+            height: 100%;
+            width: 90%;
             margin: 1.5em 0em;
             
             
@@ -63,5 +127,6 @@
             }
         }
 
+    
     }
 }
