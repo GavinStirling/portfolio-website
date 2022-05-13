@@ -6,13 +6,21 @@
         height: 95vh;
         margin: 4em $section-margin;
         text-align: center;
-        display: grid;
-        justify-content: center;
-        gap: 1em;
-        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
         font-family: $primary-font;
         color: $secondary-font-color;
         font-weight: 500;
+
+        &__intro {
+            display: none;
+        }
+
+        &__cards {
+            display: grid;
+            justify-content: center;
+            gap: 1em;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        }
 
         &__card {
             @include centerCard();
@@ -34,13 +42,21 @@
         height: 95vh;
         margin: 4em $section-margin;
         text-align: center;
-        display: grid;
-        justify-content: center;
-        gap: 4em;
-        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
         font-family: $primary-font;
         color: $secondary-font-color;
         font-weight: 500;
+
+        &__intro {
+            display: none;
+        }
+
+        &__cards {
+            display: grid;
+            justify-content: center;
+            gap: 4em;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        }
 
         &__card {
             @include centerCard();
@@ -48,6 +64,45 @@
             img {
                 height: $skill-image-size;
                 width: $skill-image-size;
+            }
+
+            p {
+                margin-top: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .skills {
+        height: 30vh;
+        width: 90%;
+        margin: 2em $section-margin 4em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        font-family: $primary-font;
+        color: $secondary-font-color;
+        font-weight: 500;
+
+        &__intro {
+            display: block;
+        }
+
+        &__cards {
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        &__card {
+            @include centerCard();
+            margin: 1em;
+
+            img {
+                height: 2em;
+                width: 2em;
             }
 
             p {

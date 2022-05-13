@@ -25,13 +25,15 @@
             margin: 1em;
         }
 
-        &__title--mobile {
+        &__title {
             font-weight: 700;
             font-size: 1.5em;
         }
+
         &__title--tablet1 {
             display: none;
         }
+
         &__title--tablet2 {
             display: none;
         }
@@ -42,7 +44,8 @@
             height: 1em;
         }
 
-        &__links, &__contact {
+        &__links,
+        &__contact {
             display: none;
         }
     }
@@ -53,7 +56,7 @@
         width: 100%;
         height: 10vh;
         display: flex;
-        padding: 0 2em;   
+        padding: 0 2em;
         justify-content: space-between;
         align-items: center;
         font-family: $primary-font;
@@ -62,7 +65,7 @@
             display: none;
         }
 
-        &__title--mobile {
+        &__title {
             display: none;
         }
 
@@ -89,13 +92,13 @@
             width: 100%;
             font-family: $primary-font;
             font-weight: 400;
-            color: $secondary-font-color;    
+            color: $secondary-font-color;
 
             a {
                 margin: 0 0rem;
                 text-decoration: none;
             }
-            
+
             a:visited {
                 color: $secondary-font-color;
             }
@@ -105,6 +108,76 @@
             margin: 0 0em;
             height: 2.5em;
             width: 8em;
+            font-family: $primary-font;
+            font-weight: 700;
+            color: $secondary-color;
+            background-color: $primary-color;
+            border: solid 1px $secondary-color;
+            border-radius: 0.25em;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navigation {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        padding: 0 2em;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $primary-font;
+
+        &__left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-weight: 700;
+        }
+
+        &__logo {
+            margin: 0 0.5em;
+        }
+
+        &__title--tablet1 {
+            display: none
+        }
+
+        &__title--tablet2 {
+            display: none
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        &__links {
+            width: 100%;
+            font-family: $primary-font;
+            font-weight: 400;
+            color: $secondary-font-color;
+
+            a {
+                margin: 0 0.5rem;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $secondary-font-color;
+            }
+        }
+
+        &__contact {
+            margin: 0 1em;
+            padding: 0 0.5em;
+            height: 2.5em;
+            width: 12em;
             font-family: $primary-font;
             font-weight: 700;
             color: $secondary-color;
