@@ -3,7 +3,7 @@
 
 @media screen and (max-width: 480px) {
     .intro {
-        margin: $section-margin;
+        margin: 5em $section-margin $section-margin;
         height: 95vh;
         padding: 2em;
         font-family: $primary-font;

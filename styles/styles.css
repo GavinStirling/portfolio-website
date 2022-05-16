@@ -177,7 +177,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .intro {
-    margin: 2em;
+    margin: 5em 2em 2em;
     height: 95vh;
     padding: 2em;
     font-family: "Inter";
