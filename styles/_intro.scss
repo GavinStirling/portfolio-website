@@ -52,10 +52,10 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .intro {
+    .intro {      
         width: 90%;
         height: 50vh;
-        margin: $margin-tablet;
+        margin: 5em $section-margin $section-margin $section-margin;       
 
         &__left {
             display: flex;
