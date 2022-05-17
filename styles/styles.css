@@ -583,7 +583,7 @@ body {
     font-family: "Inter";
     display: grid;
     justify-content: center;
-    gap: 4em;
+    gap: 1.5em;
     grid-template: repeat(1, 1fr)/repeat(3, 1fr);
   }
   .projects__card {
