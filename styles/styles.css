@@ -30,6 +30,9 @@ body {
     justify-content: flex-start;
     align-items: center;
   }
+  .navigation__input-button {
+    display: none;
+  }
   .navigation__logo {
     height: 2.5em;
     width: 2.5em;
@@ -95,22 +98,34 @@ body {
     color: #8C9CB1;
   }
   .navigation__links a {
-    margin: 0 0.3em;
+    margin: 0 0.05em;
     text-decoration: none;
   }
   .navigation__links a:visited {
     color: #8C9CB1;
   }
   .navigation__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 0em;
     height: 2.5em;
-    width: 8em;
+    width: 15em;
     font-family: "Inter";
     font-weight: 700;
     color: #272643;
     background-color: #BAE8E8;
     border: solid 1px #272643;
     border-radius: 0.25em;
+  }
+  .navigation__contact a {
+    color: #272643;
+    width: 100%;
+    margin: 0 1.5rem;
+    text-decoration: none;
+  }
+  .navigation__contact a:visited {
+    color: #272643;
   }
 }
 @media screen and (min-width: 769px) {
@@ -163,16 +178,28 @@ body {
     color: #8C9CB1;
   }
   .navigation__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 1em;
     padding: 0 0.5em;
     height: 2.5em;
-    width: 12em;
+    width: 18em;
     font-family: "Inter";
     font-weight: 700;
     color: #272643;
     background-color: #BAE8E8;
     border: solid 1px #272643;
     border-radius: 0.25em;
+  }
+  .navigation__contact a {
+    color: #272643;
+    width: 100%;
+    margin: 0 1.5rem;
+    text-decoration: none;
+  }
+  .navigation__contact a:visited {
+    color: #272643;
   }
 }
 @media screen and (max-width: 480px) {

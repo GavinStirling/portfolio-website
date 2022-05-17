@@ -23,6 +23,10 @@
 
         }
 
+        &__input-button {
+            display: none;
+        }
+
         &__logo {
             height: 2.5em;
             width: 2.5em;
@@ -102,7 +106,7 @@
             color: $secondary-font-color;
 
             a {
-                margin: 0 0.3em;
+                margin: 0 0.05em;
                 text-decoration: none;
             }
 
@@ -112,15 +116,27 @@
         }
 
         &__contact {
+            @include centerSelf();
             margin: 0 0em;
             height: 2.5em;
-            width: 8em;
+            width: 15em;
             font-family: $primary-font;
             font-weight: 700;
             color: $secondary-color;
             background-color: $primary-color;
             border: solid 1px $secondary-color;
             border-radius: 0.25em;
+
+            a {
+                color: $secondary-color;
+                width: 100%;
+                margin: 0 1.5rem;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $secondary-color;
+            }
         }
     }
 }
@@ -183,17 +199,31 @@
             }
         }
 
+       
+
         &__contact {
+            @include centerSelf();
             margin: 0 1em;
             padding: 0 0.5em;
             height: 2.5em;
-            width: 12em;
+            width: 18em;
             font-family: $primary-font;
             font-weight: 700;
             color: $secondary-color;
             background-color: $primary-color;
             border: solid 1px $secondary-color;
             border-radius: 0.25em;
+
+            a {
+                color: $secondary-color;
+                width: 100%;
+                margin: 0 1.5rem;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $secondary-color;
+            }
         }
     }
 }
