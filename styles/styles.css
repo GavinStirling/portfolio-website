@@ -503,7 +503,7 @@ body {
     align-items: center;
     margin-bottom: 2.5em;
   }
-  .projects__card--buttons button {
+  .projects__card--buttons a {
     font-family: "Inter";
     font-weight: 600;
     width: 8em;
@@ -515,9 +515,14 @@ body {
     border: none;
     display: flex;
     justify-content: flex-start;
+    text-decoration: none;
+    color: #272643;
   }
-  .projects__card--buttons button img {
+  .projects__card--buttons a img {
     margin-left: 1em;
+  }
+  .projects__card--buttons a:visited {
+    color: #272643;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -559,7 +564,7 @@ body {
     align-items: center;
     margin-bottom: 2.5em;
   }
-  .projects__card--buttons button {
+  .projects__card--buttons a {
     font-family: "Inter";
     font-weight: 600;
     width: 8em;
@@ -571,9 +576,14 @@ body {
     border: none;
     display: flex;
     justify-content: flex-start;
+    text-decoration: none;
+    color: #272643;
   }
-  .projects__card--buttons button img {
+  .projects__card--buttons a img {
     margin-left: 1em;
+  }
+  .projects__card--buttons a:visited {
+    color: #272643;
   }
 }
 @media screen and (min-width: 769px) {
@@ -584,12 +594,15 @@ body {
     display: grid;
     justify-content: center;
     gap: 1.5em;
-    grid-template: repeat(1, 1fr)/repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .projects__card {
     height: 100%;
     width: 90%;
     margin: 1.5em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .projects__card--image {
     width: 100%;
@@ -612,11 +625,11 @@ body {
   }
   .projects__card--buttons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 2.5em;
   }
-  .projects__card--buttons button {
+  .projects__card--buttons a {
     font-family: "Inter";
     font-weight: 600;
     width: 8em;
@@ -628,9 +641,14 @@ body {
     border: none;
     display: flex;
     justify-content: flex-start;
+    text-decoration: none;
+    color: #272643;
   }
-  .projects__card--buttons button img {
+  .projects__card--buttons a img {
     margin-left: 1em;
+  }
+  .projects__card--buttons a:visited {
+    color: #272643;
   }
 }
 @media screen and (max-width: 480px) {
