@@ -1,7 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-
 @media screen and (max-width: 480px) {
     .navigation {
         width: 90%;
@@ -20,7 +19,6 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
         }
 
         &__input-button {
@@ -166,11 +164,11 @@
         }
 
         &__title--tablet1 {
-            display: none
+            display: none;
         }
 
         &__title--tablet2 {
-            display: none
+            display: none;
         }
 
         &__menu {
@@ -192,14 +190,13 @@
             a {
                 margin: 0 1.5rem;
                 text-decoration: none;
+                color: $secondary-font-color;
             }
 
             a:visited {
                 color: $secondary-font-color;
             }
         }
-        
-       
 
         &__contact {
             @include centerSelf();
