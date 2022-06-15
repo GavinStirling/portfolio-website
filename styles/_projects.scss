@@ -9,6 +9,10 @@
         flex-direction: column;
         align-items: center;
 
+        &__intro {
+            display: none;
+        }
+
         &__card {
             height: 100%;
             margin: 1.5em 0em;
@@ -77,6 +81,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &__intro {
+            display: none;
+        }
 
         &__card {
             height: 100%;
@@ -148,6 +156,13 @@
         justify-content: center;
         gap: 1.5em;
         grid-template-columns: repeat(3, 1fr);
+
+        &__intro {
+            display: block;
+            font-family: $primary-font;
+            color: $secondary-font-color;
+            width: 80%;
+        }
 
         &__card {
             height: 100%;

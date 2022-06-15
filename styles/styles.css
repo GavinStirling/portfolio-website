@@ -173,6 +173,7 @@ body {
   .navigation__links a {
     margin: 0 1.5rem;
     text-decoration: none;
+    color: #8C9CB1;
   }
   .navigation__links a:visited {
     color: #8C9CB1;
@@ -242,6 +243,15 @@ body {
     border: 2px solid #272643;
     border-radius: 0.25em;
     box-shadow: 0.25em 0.25em #272643;
+    color: #272643;
+    text-decoration: none;
+  }
+  .intro a {
+    color: #272643;
+    text-decoration: none;
+  }
+  .intro a:visited {
+    color: #272643;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -289,6 +299,13 @@ body {
     border: 2px solid #272643;
     border-radius: 0.25em;
     box-shadow: 0.1em 0.1em #272643;
+  }
+  .intro__button a {
+    color: #272643;
+    text-decoration: none;
+  }
+  .intro__button a:visited {
+    color: #272643;
   }
 }
 @media screen and (min-width: 769px) {
@@ -340,6 +357,13 @@ body {
     border: 2px solid #272643;
     border-radius: 0.25em;
     box-shadow: 0.1em 0.1em #272643;
+  }
+  .intro__button a {
+    color: #272643;
+    text-decoration: none;
+  }
+  .intro__button a:visited {
+    color: #272643;
   }
 }
 @media screen and (max-width: 480px) {
@@ -474,6 +498,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .projects__intro {
+    display: none;
+  }
   .projects__card {
     height: 100%;
     margin: 1.5em 0em;
@@ -533,6 +560,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .projects__intro {
+    display: none;
   }
   .projects__card {
     height: 100%;
@@ -595,6 +625,12 @@ body {
     justify-content: center;
     gap: 1.5em;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .projects__intro {
+    display: block;
+    font-family: "Inter";
+    color: #8C9CB1;
+    width: 80%;
   }
   .projects__card {
     height: 100%;

@@ -32,7 +32,7 @@
                 <a href="#projects">Projects</a>
             </div>
 
-            <button action="#footer" class="navigation__contact"> <a href="#footer">Get in Touch</a> </button>
+            <button class="navigation__contact"> <a href="#footer">Get in Touch</a> </button>
         </div>
     </nav>
 
@@ -41,8 +41,8 @@
             <p class="intro__subtitle">Hey! I'm Gavin Stirling <img class="intro__emoji" src="./images/Emoji.png"
                     alt="Waving emoji"></p>
             <p class="intro__title">A Junior Software Develop based in the UK.</p>
-            <button class="intro__button">Take a look at my work <img src="./images/button-arrow.png"
-                    alt="button arrow"></button>
+            <button class="intro__button"><a href="#projects"> Take a look at my work </a><img
+                    src="./images/button-arrow.png" alt="button arrow"></button>
         </div>
 
         <img class="intro__image" src="./images/STIRLING-80.jpg" alt="Photo of Gavin Stirling">
@@ -54,9 +54,7 @@
     <div class="skills">
         <div class="skills__intro">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Below are the skills which I have developed and made use of in the below projects.
             </p>
         </div>
 
@@ -110,8 +108,13 @@
     </div>
 
     <h1 id="projects" class="section-title">My Projects</h1>
+    <div class="projects__intro">
+        <p>
+            Below are some of the projects which I have built. The code can be found on my GitHub and they are all deployed as a live website. 
+        </p>
+    </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
         <!-- <div class="projects__card template">
             <img class="projects__card--image" src="" alt="">
             <p class="projects__card--tech">
@@ -129,7 +132,7 @@
             </div>
         </div> -->
 
-<div class="projects__card connect-four">
+        <div class="projects__card connect-four">
             <img class="projects__card--image" src="./images/connect-four-preview.png" alt="Connect Four Preview">
             <p class="projects__card--tech">
                 JavaScript
@@ -138,11 +141,14 @@
                 Connect Four Game
             </p>
             <p class="projects__card--description">
-                My version of the connect four game made using JavaScript. <br><br> It makes use of a nested array to track two players who drop discs into columns with the aim to connect four in a row of the same colour.
+                My version of the connect four game made using JavaScript. <br><br> It makes use of a nested array to
+                track two players who drop discs into columns with the aim to connect four in a row of the same colour.
             </p>
             <div class="projects__card--buttons">
-                <a href="https://github.com/GavinStirling/connect-four">Code <img src="./images/button-code.png" alt="Code Button Image"></a>
-                <a href="https://gavinstirling.github.io/connect-four/">Preview <img src="./images/button-preview.png" alt="Preview Button Image"></a>
+                <a href="https://github.com/GavinStirling/connect-four">Code <img src="./images/button-code.png"
+                        alt="Code Button Image"></a>
+                <a href="https://gavinstirling.github.io/connect-four/">Preview <img src="./images/button-preview.png"
+                        alt="Preview Button Image"></a>
             </div>
         </div>
 
@@ -156,10 +162,14 @@
             </p>
             <p class="projects__card--description">
                 This is my calculator which was built using Javascript and was also tested end-to-end using Cypress.
+                <br><br> I focused on the BEM naming principles while building this calculator to ensure best practice
+                was taken when styling.
             </p>
             <div class="projects__card--buttons">
-                <a href="https://github.com/GavinStirling/calculator">Code <img src="./images/button-code.png" alt="Code Button Image"></a>
-                <a href="https://gavinstirling.github.io/calculator/">Preview <img src="./images/button-preview.png" alt="Preview Button Image"></a>
+                <a href="https://github.com/GavinStirling/calculator">Code <img src="./images/button-code.png"
+                        alt="Code Button Image"></a>
+                <a href="https://gavinstirling.github.io/calculator/">Preview <img src="./images/button-preview.png"
+                        alt="Preview Button Image"></a>
             </div>
         </div>
 
@@ -172,11 +182,14 @@
                 Ticket Tracker
             </p>
             <p class="projects__card--description">
-                The goal of thius project was to create an application to track the amount if tickets completed by the employees. <br><br> It demonstrates the use of useState in React.
+                The goal of thius project was to create an application to track the amount if tickets completed by the
+                employees. <br><br> It demonstrates the use of useState in React.
             </p>
             <div class="projects__card--buttons">
-                <a href="https://github.com/GavinStirling/ticket-tracker">Code <img src="./images/button-code.png" alt="Code Button Image"></a>
-                <a href="https://gavinstirling.github.io/ticket-tracker/">Preview <img src="./images/button-preview.png" alt="Preview Button Image"></a>
+                <a href="https://github.com/GavinStirling/ticket-tracker">Code <img src="./images/button-code.png"
+                        alt="Code Button Image"></a>
+                <a href="https://gavinstirling.github.io/ticket-tracker/">Preview <img src="./images/button-preview.png"
+                        alt="Preview Button Image"></a>
             </div>
         </div>
 
@@ -189,11 +202,14 @@
                 Beers! - Punk API
             </p>
             <p class="projects__card--description">
-                React project using the Punk API as a datasource. <br><br> The focus was on using an API, useState and UseEffect.
+                React project using the Punk API as a datasource. <br><br> The focus was on using an API, useState and
+                UseEffect.
             </p>
             <div class="projects__card--buttons">
-                <a href="https://github.com/GavinStirling/beers-app">Code <img src="./images/button-code.png" alt="Code Button Image" ></a>
-                <a href="https://gavinstirling.github.io/beers-app/">Preview <img src="./images/button-preview.png" alt="Preview Button Image"></a>
+                <a href="https://github.com/GavinStirling/beers-app">Code <img src="./images/button-code.png"
+                        alt="Code Button Image"></a>
+                <a href="https://gavinstirling.github.io/beers-app/">Preview <img src="./images/button-preview.png"
+                        alt="Preview Button Image"></a>
             </div>
         </div>
 
@@ -206,9 +222,11 @@
         <div class="about__left">
             <h1 class="about__title--desktop">About Me</h1>
             <p class="about__story">
-                Hi my name is Gavin Stirling and I am a Junior Software Developer training with _Nology in London. 
+                Hi my name is Gavin Stirling and I am a Junior Software Developer training with _Nology in London.
                 <br><br>
-                I am originally from South Africa and have a degree in Mechanical Engineering. I relocated to the UK with my Wife, Tania, in April of 2022. This was also when I decided to make the change in career towards Software Development. 
+                I am originally from South Africa and have a degree in Mechanical Engineering. I relocated to the UK
+                with my Wife, Tania, in April of 2022. This was also when I decided to make the change in career towards
+                Software Development.
             </p>
         </div>
         <img class="about__flag" src="./images/sa-flag.jpg" alt="South African Flag">
